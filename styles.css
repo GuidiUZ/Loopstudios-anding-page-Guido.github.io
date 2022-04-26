@@ -1,0 +1,866 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+/*font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+*/
+
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Header*/
+
+.logo img  {
+    cursor: pointer;
+    position: absolute;
+    margin: 75px 20px;
+    width: 150px;
+    height: 25px;
+    z-index: 10;
+    
+}
+
+.icon-menu {
+    cursor: pointer;
+    margin: 75px 20px;
+    position: absolute;
+    right: 10px;
+    z-index: 10;
+}
+
+.nav-list {
+    background-color: black;
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    right: -600px;
+    transition: all .5s ease;
+    z-index: 9;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.nav-list ul {
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+    
+}
+
+
+.nav-list ul li {
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+
+.nav-list ul li a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: .3s;
+    text-transform: uppercase;
+    
+}
+
+.nav-list a:hover, a:focus {
+    background-size: 100% 1px;
+}
+
+
+/*Javascript styles*/
+
+
+.active {
+    transform: translate(-600px);
+}
+
+
+
+.opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .5s ease;
+}
+
+
+
+/*First section*/
+
+.hero-image {
+    margin-bottom: 135px;
+}
+
+.img-hero {
+    background-image: url(./images/mobile/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-image {
+    height: 100vh;
+    width: 100vw;
+    margin-top: -40px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-image .text-border {
+    position: absolute;
+    top: 240px;
+    left: 25px;
+    border: 2px solid white;
+    z-index: 3;
+    width: 80vw;
+    height: 180px;
+}
+
+.hero-image h1 {
+    letter-spacing: 2px;
+    margin: auto;
+    position: absolute;
+    z-index: 3;
+    text-align: initial;
+    top: 12%;
+    left: 8%;
+    color: white;
+    max-width: 200px;
+    font-size: 35px;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+/*Second section*/
+
+
+.vr .img-vr {
+    background-image: url(./images/mobile/image-interactive.jpg);
+    background-size: cover;
+    display: block;
+    margin: auto;
+    width: 325px;
+    height: 220px;
+}
+
+
+.vr h2 {
+    display: block;
+    margin: 25px auto;
+    max-width: 300px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.vr p {
+    font-family: 'Alata', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    margin: auto;
+    max-width: 280px;
+    text-align: center;
+    color: hsl(0, 0%, 41%)
+}
+
+
+
+/*Third section*/
+
+.creations {
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+
+.creations h2 {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.creations ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.creations ul li {
+    color: white;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.creations ul li span {
+    position: relative;
+    top: 35px;
+    left: 25px;
+}
+
+.creations span p {
+    position: relative;
+    max-width: 120px;
+    margin: 0px;
+    font-size: 22px;
+}
+
+/*li imgs*/
+
+.creations .img1 {
+    cursor:pointer;
+    margin: auto;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/mobile/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    background-size: 325px 125px;
+    width: 325px;
+    height: 125px;
+}
+
+.creations .img1:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%), url(./images/mobile/image-deep-earth.jpg);
+    color: black;
+
+}
+
+.creations .img2 {
+    cursor:pointer;
+    margin: auto;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/mobile/image-night-arcade.jpg);
+    background-repeat: no-repeat;
+    background-size: 325px 125px;
+    width: 325px;
+    height: 125px;
+}
+
+.creations .img2:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%), url(./images/mobile/image-night-arcade.jpg);
+    color: black;
+}
+
+.creations .img3 {
+    cursor:pointer;
+    margin: auto;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/mobile/image-soccer-team.jpg);
+    background-repeat: no-repeat;
+    background-size: 325px 125px;
+    width: 325px;
+    height: 125px;
+}
+
+.creations .img3:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%), url(./images/mobile/image-soccer-team.jpg);
+    color: black;
+}
+
+.creations .img4 {
+    cursor:pointer;
+    margin: auto;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/mobile/image-grid.jpg);
+    background-repeat: no-repeat;
+    background-size: 325px 125px;
+    width: 325px;
+    height: 125px;
+}
+
+
+.creations .img4:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%),  url(./images/mobile/image-grid.jpg);
+    color: black;
+}
+
+.creations .img5 {
+    cursor:pointer;
+    margin: auto;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/mobile/image-from-above.jpg);
+    background-repeat: no-repeat;
+    background-size: 325px 125px;
+    width: 325px;
+    height: 125px;
+}
+
+.creations .img5:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%), url(./images/mobile/image-from-above.jpg);
+    color: black;
+}
+
+
+.creations .img6 {
+    cursor:pointer;
+    margin: auto;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/mobile/image-pocket-borealis.jpg);
+    background-repeat: no-repeat;
+    background-size: 325px 125px;
+    width: 325px;
+    height: 125px;
+}
+
+.creations .img6:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%), url(./images/mobile/image-pocket-borealis.jpg);
+    color: black;
+}
+
+
+.creations .img7 {
+    cursor:pointer;
+    margin: auto;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/mobile/image-curiosity.jpg);
+    background-repeat: no-repeat;
+    background-size: 325px 125px;
+    width: 325px;
+    height: 125px;
+}
+
+.creations .img7:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%), url(./images/mobile/image-curiosity.jpg);
+    color: black;
+}
+
+
+.creations .img8 {
+    cursor:pointer;     
+    margin: auto;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/mobile/image-fisheye.jpg);
+    background-repeat: no-repeat;
+    background-size: 325px 125px;
+    width: 325px;
+    height: 125px;
+}
+
+.creations .img8:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%), url(./images/mobile/image-fisheye.jpg);
+    color: black;
+}
+
+
+
+button {
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 45px;
+    background-color: white;
+    border: 2px solid hsl(0, 0%, 41%);
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Alata', sans-serif;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+
+/*Footer*/
+
+
+footer {
+    background-color: black;
+    height: 80vh;
+
+}
+
+.logo2 {
+    padding-top: 50px;
+}
+
+.logo2 img {
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+footer ul {
+    padding: 0px;
+}
+
+footer ul a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-top: 20px;
+    font-size: 17px;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: .3s;
+}
+
+footer a:hover, a:focus {
+    background-size: 15% 1px;
+}
+
+
+footer .icons {
+    display: block;
+    margin: 20px auto;
+}
+
+.icons ul {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    
+}
+
+.icons ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.icons li img {
+    cursor: pointer;
+}
+
+
+
+
+.attribution span {
+    color: white;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: -25px;
+    margin-bottom: 0px;
+}
+
+.attribution a { 
+    color: white;
+}
+
+
+
+/*--------------------------- MEDIA QUERYS -----------------------------*/
+
+
+
+
+@media(min-width:750px) {
+
+
+/*Header*/
+
+.logo img {
+    width: 200px;
+    height: 35px;
+    top: -10px;
+    left: 100px;
+    
+}
+
+.icon-menu {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    right: 235px;
+    top: 25px;
+    background: none;
+    box-shadow: none;
+}
+
+.nav-list ul  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0px;
+}
+
+.nav-list ul li {
+    padding: 20px;
+}
+
+
+.nav-list ul li a {
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+
+/*First section*/
+
+
+.img-hero {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.4) 50%), url(./images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.hero-image .text-border {
+    position: absolute;
+    top: 240px;
+    left: 125px;
+    border: 2px solid white;
+    z-index: 3;
+    width: 35vw;
+    height: 200px;
+}
+
+.hero-image h1 {
+    margin-top: 5px;
+    text-align: initial;
+    font-size: 50px;
+    max-width: 500px;
+    width: 450px;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+
+
+/*Section vr*/
+
+.vr {
+    display: flex;
+}
+
+
+.vr .img-vr {
+    background-image: url(./images/desktop/image-interactive.jpg);
+    background-size: cover;
+    position: relative;
+    left: -200px;
+    margin: auto;
+    width: 520px;
+    height: 350px;
+}
+
+.text-vr {
+    text-align: center;
+    width: 500px;
+    height: 210px;
+    background-color: white;
+    position: absolute;
+    top: 900px;
+    right: 225px;
+}
+
+.text-vr h2 {
+    text-align: initial;
+    margin: 70px;
+    margin-top: 40px;
+}
+
+.text-vr p {
+    line-height: 25px;
+    text-align: initial;
+    max-width: 420px;
+    margin-left: 70px;
+    margin-top: -60px;
+
+}
+
+
+
+
+/*Third section*/
+
+
+.creations ul {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 225px 225px 225px 225px;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.creations li {
+    padding: 0px;
+}
+
+/*li imgs*/
+
+.creations .img1 {
+    cursor:pointer;
+    margin: auto;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/desktop/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px 350px;
+    width: 200px;
+    height: 350px;
+}
+
+.creations .img1:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%), url(./images/desktop/image-deep-earth.jpg);
+    color: black;
+
+}
+
+.creations .img2 {
+    cursor:pointer;
+    margin: auto;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/desktop/image-night-arcade.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px 350px;
+    width: 200px;
+    height: 350px;
+}
+
+.creations .img2:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%), url(./images/desktop/image-night-arcade.jpg);
+    color: black;
+}
+
+.creations .img3 {
+    cursor:pointer;
+    margin: auto;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/desktop/image-soccer-team.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px 350px;
+    width: 200px;
+    height: 350px;
+}
+
+.creations .img3:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%), url(./images/desktop/image-soccer-team.jpg);
+    color: black;
+}
+
+.creations .img4 {
+    cursor:pointer;
+    margin: auto;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/desktop/image-grid.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px 350px;
+    width: 200px;
+    height: 350px;
+}
+
+
+.creations .img4:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%),  url(./images/desktop/image-grid.jpg);
+    color: black;
+}
+
+.creations .img5 {
+    cursor:pointer;
+    margin: auto;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/desktop/image-from-above.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px 350px;
+    width: 200px;
+    height: 350px;
+}
+
+.creations .img5:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%), url(./images/desktop/image-from-above.jpg);
+    color: black;
+}
+
+
+.creations .img6 {
+    cursor:pointer;
+    margin: auto;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/desktop/image-pocket-borealis.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px 350px;
+    width: 200px;
+    height: 350px;
+}
+
+.creations .img6:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%), url(./images/desktop/image-pocket-borealis.jpg);
+    color: black;
+}
+
+
+.creations .img7 {
+    cursor:pointer;
+    margin: auto;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/desktop/image-curiosity.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px 350px;
+    width: 200px;
+    height: 350px;
+}
+
+.creations .img7:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%), url(./images/desktop/image-curiosity.jpg);
+    color: black;
+    font-size: 24px;
+}
+
+
+.creations .img8 {
+    cursor:pointer;     
+    margin: auto;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8099614845938375) 0%, rgba(0,0,0,0) 46%), url(./images/desktop/image-fisheye.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px 350px;
+    width: 200px;
+    height: 350px;
+}
+
+.creations .img8:hover {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 50%), url(./images/desktop/image-fisheye.jpg);
+    color: black;
+}
+
+
+.creations span p {
+    position: relative;
+    top: 220px;
+    max-width: 120px;
+    margin: 0px;
+    font-size: 22px;
+}
+
+
+
+/* creations h2 and button*/
+
+.creations {
+    margin-top: 200px;
+}
+
+.creations h2 {
+    font-size: 45px;
+    position: relative;
+    display: block;
+    top: -50px;
+    left: -260px;
+}
+
+
+.creations button {
+    width: 150px;
+    height: 38px;
+    position: relative;
+    top: -880px;
+    right: -375px;
+}
+
+
+
+
+
+/*footer*/
+
+
+footer {
+    background-color: black;
+    height: 40vh;
+    clear: both;
+
+}
+
+
+footer img {
+    position: relative;
+    left: -400px;
+}
+
+footer ul {
+    display: flex;
+    padding: 15px;
+    position: relative;
+    left: 150px;
+}
+
+footer ul a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 15px;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: .3s;
+ 
+}
+
+footer a:hover, a:focus {
+    background-size: 50% 1px;
+}
+
+
+footer .icons {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    height: 50px;
+}
+
+footer .icons ul {
+    position: relative;
+    top: -220px;
+    left: 885px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 15px;
+}
+
+
+footer p {
+    color: hsl(0, 0%, 55%);
+    position: relative;
+    top: -100px;
+    right: 250px;
+}
+
+
+.attribution {
+    position: relative;
+    top: 0px;
+}
+
+
+}
