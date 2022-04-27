@@ -46,9 +46,9 @@ a {
 
 .nav-list {
     background-color: black;
-    width: 350px;
-    height: 100vh;
-    position: absolute;
+    width: 375px;
+    height: 90vh;
+    position: fixed;
     top: 0px;
     right: -600px;
     transition: all .5s ease;
