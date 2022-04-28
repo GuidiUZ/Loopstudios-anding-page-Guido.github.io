@@ -498,7 +498,7 @@ footer .icons {
 
 .nav-list {
     width: 375px;
-    position: absolute;
+    position: absolute !important;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
