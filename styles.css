@@ -46,7 +46,7 @@ a {
 
 .nav-list {
     background-color: black;
-    width: 375px;
+    width: 100vw;
     height: 90vh;
     position: fixed;
     top: 0px;
@@ -497,6 +497,8 @@ footer .icons {
 }
 
 .nav-list {
+    width: 375px;
+    position: absolute;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
